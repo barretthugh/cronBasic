@@ -13,7 +13,8 @@ RUN apt-get update \
 	&& apt-get clean -y \
 	&& apt-get autoclean -y \
 	&& apt-get autoremove -y \
-	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+	&& pip install Tushare
 
 #COPY crontab /etc/cron.d/cronget
 

@@ -6,4 +6,3 @@ lxml==3.6.4
 bs4
 SQLAlchemy
 psycopg2
-Tushare
